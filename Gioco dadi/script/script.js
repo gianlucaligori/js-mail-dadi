@@ -22,18 +22,6 @@
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 
-// const userNum = Math.floor(Math.random() * 6) + 1;
-// const cpuNum = Math.floor(Math.random() * 6) + 1;
-
-
-// // let userName = prompt("Inserisci Nome Giocatore");
-// userName = document.querySelector('.userName').innerHTML = userName;
-
-// const result = document.querySelector('.result').innerHTML;
-// if (userNum < cpuNum) {
-//     console.log(userName + 'is the winner')
-// }
-
 
 
 
@@ -43,12 +31,20 @@ document.querySelector(".userDice").innerHTML = userDice;
 let cpuDice = Math.floor(Math.random() * 6) + 1;
 document.querySelector(".cpuDice").innerHTML = cpuDice;
 
+console.log(userDice, cpuDice);
+
 if (userDice > cpuDice) {
     document.querySelector(".result").innerHTML = "HAI VINTO!"
+    console.log('Hai vinto');
+
 } else if (cpuDice > userDice) {
     document.querySelector(".result").innerHTML = "HAI PERSO!"
+    console.log('Hai perso');
+
 } else {
     document.querySelector(".result").innerHTML = "PAREGGIO"
+    console.log('Hai pareggiato');
+
 }
 
 

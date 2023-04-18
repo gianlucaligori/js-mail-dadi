@@ -41,3 +41,9 @@ h1 {
     display: block;
     margin: 0 auto;
 }
+
+.play-btn {
+    text-align: end;
+    font-size: 2rem;
+    background-color: yellow;
+}
